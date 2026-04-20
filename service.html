@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore our menu with a wide range of smoothies, wraps, salads, and warm bowls.">
+    <title>Menu | Kauai</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Outfit:wght@600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="flex flex-col h-full">
+    <!-- Site header and navigation -->
+    <header>
+        <div class="container header-inner">
+            <a href="index.html" class="brand">
+                <i data-lucide="leaf" style="color: var(--c-primary)"></i>
+                <h1>Kauai</h1>
+            </a>
+            
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="service.html">Menu</a></li>
+                    <li><a href="inquiry.html">Enquiry</a></li>
+                    <li><a href="contacts.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <button id="mobile-nav-toggle" class="mobile-nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <div class="hamburger"></div>
+            </button>
+        </div>
+
+        <nav id="mobile-nav" class="mobile-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="service.html">Menu</a></li>
+                <li><a href="inquiry.html">Enquiry</a></li>
+                <li><a href="contacts.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="menu-intro" class="page-hero animate-on-scroll">
+            <div class="container">
+                <h2>Our Menu</h2>
+                <p>Discover real, fresh ingredients combined to give you clean energy for your day.</p>
+                
+                <!-- In-page anchor links for easy menu navigation -->
+                <nav id="menu-anchors" class="menu-nav mt-8" style="margin-top: 2rem;">
+                    <a href="#smoothies" class="menu-pill active">Smoothies</a>
+                    <a href="#wraps" class="menu-pill">Wraps & Salads</a>
+                    <a href="#warm-bowls" class="menu-pill">Warm Bowls</a>
+                    <a href="#breakfast" class="menu-pill">Breakfast</a>
+                </nav>
+            </div>
+        </section>
+
+        <!-- Smoothies Category Section -->
+        <section id="smoothies" class="menu-category container animate-on-scroll delay-1">
+            <h3 class="menu-category-title"><i data-lucide="cup-soda" style="color:var(--c-primary)"></i> Smoothies & Raw Juices</h3>
+            <!-- Products are grouped within unordered lists -->
+            <ul class="grid grid-cols-2">
+                <li class="card">
+                    <div class="card-content">
+                        <h4>Peanut Butter Bomb</h4>
+                        <p class="text-muted" style="flex-grow: 1;">Whey protein, sugar-free peanut butter, banana, cacao, fat-free milk.</p>
+                        <p class="badge tabular">R75</p>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="card-content">
+                        <h4>GEM (Green Energy Machine)</h4>
+                        <p class="text-muted" style="flex-grow: 1;">Spinach, apple, cucumber, celery, hemp seeds.</p>
+                        <p class="badge tabular">R65</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Wraps & Salads Category Section -->
+        <section id="wraps" class="menu-category container animate-on-scroll">
+            <h3 class="menu-category-title"><i data-lucide="salad" style="color:var(--c-primary)"></i> Wraps & Salads</h3>
+            <ul class="grid grid-cols-2">
+                <li class="card">
+                    <div class="card-content">
+                        <h4>Princess Wrap</h4>
+                        <p class="text-muted" style="flex-grow: 1;">Free-range chicken, avocado, feta, tomatoes, carrot, celery & onion mayo.</p>
+                        <p class="badge tabular">R89</p>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="card-content">
+                        <h4>Harvest Salad</h4>
+                        <p class="text-muted" style="flex-grow: 1;">Roasted butternut, baby spinach, feta, cherry tomatoes, and a light vinaigrette.</p>
+                        <p class="badge tabular">R79</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Warm Bowls Category Section -->
+        <section id="warm-bowls" class="menu-category container animate-on-scroll">
+            <h3 class="menu-category-title"><i data-lucide="soup" style="color:var(--c-primary)"></i> Warm Bowls</h3>
+            <ul class="grid grid-cols-2">
+                <li class="card">
+                    <div class="card-content">
+                        <h4>Mexi Bowl</h4>
+                        <p class="text-muted" style="flex-grow: 1;">Spicy chicken breast, brown rice, black beans, corn, warm salsa, and avocado.</p>
+                        <p class="badge tabular">R95</p>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="card-content">
+                        <h4>Thai Crunch Bowl</h4>
+                        <p class="text-muted" style="flex-grow: 1;">Seared tofu, edamame, shredded cabbage, carrots, chili peanut dressing, and sesame seeds.</p>
+                        <p class="badge tabular">R85</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        
+        <!-- Breakfast Category Section -->
+        <section id="breakfast" class="menu-category container animate-on-scroll">
+            <h3 class="menu-category-title"><i data-lucide="coffee" style="color:var(--c-primary)"></i> Breakfast</h3>
+            <ul class="grid grid-cols-2">
+                <li class="card">
+                    <div class="card-content">
+                        <h4>Smashed Avo Toast</h4>
+                        <p class="text-muted" style="flex-grow: 1;">Smashed avocado on sourdough with a squeeze of lemon and chili flakes.</p>
+                        <p class="badge tabular">R59</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="brand" style="margin-bottom: 1.5rem;">
+                        <i data-lucide="leaf" style="color: var(--c-bg)"></i>
+                        <h2 style="color: var(--c-bg); margin: 0;">Kauai</h2>
+                    </a>
+                    <p>Real, wholesome food that fuels an active and balanced lifestyle.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <a href="about.html">Our Story</a>
+                    <a href="service.html">Our Menu</a>
+                    <a href="inquiry.html">Franchise & Enquiry</a>
+                    <a href="contacts.html">Store Locator</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Connect</h4>
+                    <p>customercare@kauai.co.za</p>
+                    <p>0861 152 824</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Kauai South Africa. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>lucide.createIcons();</script>
+    <script src="js/main.js" defer></script>
+</body>
+</html>

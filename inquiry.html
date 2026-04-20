@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Reach out to Kauai for franchise opportunities and corporate catering.">
+    <title>Enquiry | Kauai</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Outfit:wght@600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="flex flex-col h-full">
+    <header>
+        <div class="container header-inner">
+            <a href="index.html" class="brand">
+                <i data-lucide="leaf" style="color: var(--c-primary)"></i>
+                <h1>Kauai</h1>
+            </a>
+            
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="service.html">Menu</a></li>
+                    <li><a href="inquiry.html">Enquiry</a></li>
+                    <li><a href="contacts.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <button id="mobile-nav-toggle" class="mobile-nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <div class="hamburger"></div>
+            </button>
+        </div>
+
+        <nav id="mobile-nav" class="mobile-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="service.html">Menu</a></li>
+                <li><a href="inquiry.html">Enquiry</a></li>
+                <li><a href="contacts.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="enquiry-intro" class="page-hero animate-on-scroll">
+            <div class="container">
+                <h2>Work With Us</h2>
+                <p>Interested in becoming a Kauai franchisee, or looking for corporate catering solutions? Submit your enquiry below.</p>
+            </div>
+        </section>
+
+        <!-- Enquiry form covering multiple needs -->
+        <section id="enquiry-form-section" class="section container animate-on-scroll delay-1" style="max-width: 800px; padding-top: 0;">
+            <form action="#" method="POST" novalidate>
+                <!-- Personal details grouped together -->
+                <fieldset>
+                    <legend>Your Details</legend>
+                    
+                    <div class="grid grid-cols-2">
+                        <div class="form-group">
+                            <label for="fullName">Full Name</label>
+                            <!-- Input text field for full name -->
+                            <input type="text" id="fullName" name="fullName" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <!-- Phone input type -->
+                            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <!-- Email input for automatic validation base level -->
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </fieldset>
+                
+                <!-- Enquiry specifics grouped -->
+                <fieldset>
+                    <legend>Enquiry Information</legend>
+                    
+                    <div class="form-group">
+                        <label for="enquiryType">Type of Enquiry</label>
+                        <!-- Dropdown select for categorising form submissions -->
+                        <select id="enquiryType" name="enquiryType" required>
+                            <option value="" disabled selected>Select an option</option>
+                            <option value="franchise">Franchise Opportunity</option>
+                            <option value="catering">Corporate Catering</option>
+                            <option value="sponsorship">Sponsorship/Events</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <!-- Text area for the open-ended portion of the enquiry -->
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                </fieldset>
+
+                <!-- Submit button -->
+                <div style="margin-top: 2rem; text-align: center;">
+                    <button type="submit" class="btn btn-primary" style="min-width: 200px;">Submit Enquiry</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="brand" style="margin-bottom: 1.5rem;">
+                        <i data-lucide="leaf" style="color: var(--c-bg)"></i>
+                        <h2 style="color: var(--c-bg); margin: 0;">Kauai</h2>
+                    </a>
+                    <p>Real, wholesome food that fuels an active and balanced lifestyle.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <a href="about.html">Our Story</a>
+                    <a href="service.html">Our Menu</a>
+                    <a href="inquiry.html">Franchise & Enquiry</a>
+                    <a href="contacts.html">Store Locator</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Connect</h4>
+                    <p>customercare@kauai.co.za</p>
+                    <p>0861 152 824</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Kauai South Africa. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>lucide.createIcons();</script>
+    <script src="js/main.js" defer></script>
+</body>
+</html>
