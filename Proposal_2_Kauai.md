@@ -152,3 +152,5 @@ Wireframes have been conceptualised for all five pages. The homepage features a 
 - Nielsen Norman Group. (2023). *Mobile UX: Design best practices*. Retrieved from https://www.nngroup.com
 - Unsplash. (2024). *Free high-resolution food images*. Retrieved from https://www.unsplash.com
 - Google Fonts. (2024). *Open-source web fonts*. Retrieved from https://fonts.google.com
+-https://github.com/Slyvester-cyber888/KAUAI-WEBSITE-WEBDEV-PART-1-ASSIGNMENT.git
+-https://kauaisa.netlify.app/
