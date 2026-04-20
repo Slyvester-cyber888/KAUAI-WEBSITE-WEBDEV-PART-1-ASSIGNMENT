@@ -1,114 +1,72 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Learn about Kauai's history, mission, and philosophy for healthy, fresh food.">
     <title>About Us | Kauai</title>
-    
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Outfit:wght@600;700&display=swap" rel="stylesheet">
-    
-    <!-- Lucide Icons -->
-    <script src="https://unpkg.com/lucide@latest"></script>
-    
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/styles.css">
 </head>
-<body class="flex flex-col h-full">
+<body>
     <!-- Main header with navigation across all pages -->
     <header>
-        <div class="container header-inner">
-            <a href="index.html" class="brand">
-                <i data-lucide="leaf" style="color: var(--c-primary)"></i>
-                <h1>Kauai</h1>
-            </a>
-            
-            <nav class="desktop-nav">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="service.html">Menu</a></li>
-                    <li><a href="inquiry.html">Enquiry</a></li>
-                    <li><a href="contacts.html">Contact</a></li>
-                </ul>
-            </nav>
-
-            <button id="mobile-nav-toggle" class="mobile-nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
-                <div class="hamburger"></div>
-            </button>
-        </div>
-
-        <nav id="mobile-nav" class="mobile-nav">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="service.html">Menu</a></li>
-                <li><a href="inquiry.html">Enquiry</a></li>
-                <li><a href="contacts.html">Contact</a></li>
-            </ul>
+        <a href='index.html'>
+            <h1>&#127811; Kauai</h1>
+        </a>
+        
+        <nav>
+            <a href='index.html'>Home</a> |
+            <a href='about.html'>About Us</a> |
+            <a href='service.html'>Menu</a> |
+            <a href='inquiry.html'>Enquiry</a> |
+            <a href='contacts.html'>Contact</a>
         </nav>
     </header>
 
     <main>
         <!-- Page Title Section -->
-        <section id="about-intro" class="page-hero animate-on-scroll">
-            <div class="container">
-                <h2>Our Story</h2>
-                <img src="images/about-hero.jpg" alt="People enjoying a healthy lifestyle" loading="lazy">
-            </div>
+        <section id="about-intro">
+            <h2>Our Story</h2>
+            <img src="images/about-hero.jpg" alt="People enjoying a healthy lifestyle" width="960" loading="lazy">
         </section>
 
         <!-- Brand History Section -->
-        <section id="history" class="section container animate-on-scroll">
-            <div style="max-width: 800px; margin: 0 auto; text-align: center;">
-                <h3 style="display: inline-flex; align-items: center; gap: 0.5rem;"><i data-lucide="history" style="color: var(--c-secondary)"></i> Where We Began</h3>
-                <p>Kauai is a South African health food restaurant chain founded in 1995 in Cape Town. Beginning with a focus on freshly prepared wraps, salads, smoothies, and juices, Kauai quickly gained a loyal following among health-conscious consumers and fitness communities.</p>
-                <p>Over the past three decades, we have expanded to over 170 locations nationwide, becoming a staple in active spaces like Virgin Active health clubs and major shopping centres.</p>
-            </div>
+        <section id="history">
+            <h3>&#128366; Where We Began</h3>
+            <p>Kauai is a South African health food restaurant chain founded in 1995 in Cape Town. Beginning with a focus on freshly prepared wraps, salads, smoothies, and juices, Kauai quickly gained a loyal following among health-conscious consumers and fitness communities.</p>
+            <p>Over the past three decades, we have expanded to over 170 locations nationwide, becoming a staple in active spaces like Virgin Active health clubs and major shopping centres.</p>
         </section>
 
         <!-- Mission and Vision -->
-        <section id="mission-vision" class="section" style="background-color: var(--c-primary-dark); color: white;">
-            <div class="container grid grid-cols-2 animate-on-scroll">
-                <div style="padding: 2rem;">
-                    <h3 style="color: var(--c-secondary-light);"><i data-lucide="target" style="display:inline; margin-right:8px;"></i> Our Mission</h3>
-                    <p style="font-size: 1.125rem;">To nourish South Africans with real, wholesome food that fuels an active and balanced lifestyle, made fresh to order every day.</p>
-                </div>
-                <div style="padding: 2rem;">
-                    <h3 style="color: var(--c-secondary-light);"><i data-lucide="eye" style="display:inline; margin-right:8px;"></i> Our Vision</h3>
-                    <p style="font-size: 1.125rem;">To be the most loved healthy fast-food brand in South Africa, recognised for quality ingredients, bold flavours, and a commitment to wellness.</p>
-                </div>
+        <section id="mission-vision">
+            <div>
+                <h3>&#127919; Our Mission</h3>
+                <p>To nourish South Africans with real, wholesome food that fuels an active and balanced lifestyle, made fresh to order every day.</p>
+            </div>
+            <div>
+                <h3>&#128065; Our Vision</h3>
+                <p>To be the most loved healthy fast-food brand in South Africa, recognised for quality ingredients, bold flavours, and a commitment to wellness.</p>
             </div>
         </section>
 
         <!-- Our Principles/Philosophy Segment -->
-        <section id="core-values" class="section container animate-on-scroll delay-1">
-            <div class="text-center mb-8" style="margin-bottom: 3rem;">
-                <h2>Our Core Values</h2>
-            </div>
-            <ul class="grid grid-cols-2 lg:grid-cols-4">
-                <li class="card" style="padding: 2rem; border-top: 4px solid var(--c-primary);">
-                    <i data-lucide="apple" size="32" style="color: var(--c-primary); margin-bottom: 1rem;"></i>
-                    <h4>Freshness</h4>
-                    <p class="text-muted">Everything is made to order with crisp, high-quality ingredients.</p>
+        <section id="core-values">
+            <h2>Our Core Values</h2>
+            <ul>
+                <li>
+                    <h4>&#127822; Freshness</h4>
+                    <p>Everything is made to order with crisp, high-quality ingredients.</p>
                 </li>
-                <li class="card" style="padding: 2rem; border-top: 4px solid var(--c-secondary);">
-                    <i data-lucide="users" size="32" style="color: var(--c-secondary); margin-bottom: 1rem;"></i>
-                    <h4>Accessibility</h4>
-                    <p class="text-muted">Healthy living shouldn't be complicated or unaffordable.</p>
+                <li>
+                    <h4>&#128101; Accessibility</h4>
+                    <p>Healthy living shouldn't be complicated or unaffordable.</p>
                 </li>
-                <li class="card" style="padding: 2rem; border-top: 4px solid var(--c-success);">
-                    <i data-lucide="activity" size="32" style="color: var(--c-success); margin-bottom: 1rem;"></i>
-                    <h4>Balance</h4>
-                    <p class="text-muted">Fueling an active lifestyle with macronutrient-aware choices.</p>
+                <li>
+                    <h4>&#128170; Balance</h4>
+                    <p>Fueling an active lifestyle with macronutrient-aware choices.</p>
                 </li>
-                <li class="card" style="padding: 2rem; border-top: 4px solid var(--c-primary-light);">
-                    <i data-lucide="globe" size="32" style="color: var(--c-primary-light); margin-bottom: 1rem;"></i>
-                    <h4>Sustainability</h4>
-                    <p class="text-muted">Striving toward environmentally friendly practices in all our stores.</p>
+                <li>
+                    <h4>&#127757; Sustainability</h4>
+                    <p>Striving toward environmentally friendly practices in all our stores.</p>
                 </li>
             </ul>
         </section>
@@ -116,38 +74,24 @@
 
     <!-- Footer block -->
     <footer>
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col">
-                    <a href="index.html" class="brand" style="margin-bottom: 1.5rem;">
-                        <i data-lucide="leaf" style="color: var(--c-bg)"></i>
-                        <h2 style="color: var(--c-bg); margin: 0;">Kauai</h2>
-                    </a>
-                    <p>Real, wholesome food that fuels an active and balanced lifestyle, made fresh to order every day.</p>
-                </div>
-                <div class="footer-col">
-                    <h4>Quick Links</h4>
-                    <a href="about.html">Our Story</a>
-                    <a href="service.html">Our Menu</a>
-                    <a href="inquiry.html">Franchise & Enquiry</a>
-                    <a href="contacts.html">Store Locator</a>
-                </div>
-                <div class="footer-col">
-                    <h4>Connect</h4>
-                    <p>customercare@kauai.co.za</p>
-                    <p>0861 152 824</p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Kauai South Africa. All Rights Reserved.</p>
-            </div>
-        </div>
-    </footer>
+        <h2>&#127811; Kauai</h2>
+        <p>Real, wholesome food that fuels an active and balanced lifestyle, made fresh to order every day.</p>
 
-    <!-- Initialize Lucide Icons -->
-    <script>lucide.createIcons();</script>
-    
-    <!-- Main JS -->
-    <script src="js/main.js" defer></script>
+        <h4>Quick Links</h4>
+        <nav>
+            <a href='about.html'>Our Story</a> |
+            <a href='service.html'>Our Menu</a> |
+            <a href='inquiry.html'>Franchise &amp; Enquiry</a> |
+            <a href='contacts.html'>Store Locator</a>
+        </nav>
+
+        <h4>Connect</h4>
+        <p>Email: customercare@kauai.co.za</p>
+        <p>Phone: 0861 152 824</p>
+        
+        <hr>
+        <p>&copy; 2026 Kauai South Africa. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
+

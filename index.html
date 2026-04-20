@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <!-- Character encoding for properly displaying content -->
@@ -6,168 +6,93 @@
     <!-- Viewport settings for mobile responsiveness -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Kauai - Real, wholesome food that fuels an active and balanced lifestyle.">
-    <title>Kauai | Healthy Food, Smoothies & Juices</title>
-    
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Outfit:wght@600;700&display=swap" rel="stylesheet">
-    
-    <!-- Lucide Icons -->
-    <script src="https://unpkg.com/lucide@latest"></script>
-    
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/styles.css">
+    <title>Kauai | Healthy Food, Smoothies &amp; Juices</title>
 </head>
-<body class="flex flex-col h-full">
+<body>
     <!-- Main header containing the brand name and site navigation -->
     <header>
-        <div class="container header-inner">
-            <a href="index.html" class="brand">
-                <i data-lucide="leaf" style="color: var(--c-primary)"></i>
-                <h1>Kauai</h1>
-            </a>
-            
-            <!-- Desktop Nav -->
-            <nav class="desktop-nav">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="service.html">Menu</a></li>
-                    <li><a href="inquiry.html">Enquiry</a></li>
-                    <li><a href="contacts.html">Contact</a></li>
-                </ul>
-            </nav>
+        <a href='index.html'>
+            <h1>&#127811; Kauai</h1>
+        </a>
 
-            <!-- Mobile Nav Toggle -->
-            <button id="mobile-nav-toggle" class="mobile-nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
-                <div class="hamburger"></div>
-            </button>
-        </div>
-
-        <!-- Mobile Nav Menu -->
-        <nav id="mobile-nav" class="mobile-nav">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="service.html">Menu</a></li>
-                <li><a href="inquiry.html">Enquiry</a></li>
-                <li><a href="contacts.html">Contact</a></li>
-            </ul>
+        <!-- Primary site navigation -->
+        <nav>
+            <a href='index.html'>Home</a> |
+            <a href='about.html'>About Us</a> |
+            <a href='service.html'>Menu</a> |
+            <a href='inquiry.html'>Enquiry</a> |
+            <a href='contacts.html'>Contact</a>
         </nav>
     </header>
 
     <!-- Main content area for the homepage -->
     <main>
         <!-- Hero section introducing the brand with a call to action -->
-        <section id="hero" class="hero">
-            <div class="hero-bg">
-                <img src="images/hero-banner.jpg" alt="A fresh assortment of Kauai salads and smoothies" class="object-cover">
-            </div>
-            <div class="hero-overlay"></div>
-            
-            <div class="hero-content container animate-on-scroll">
-                <h2>Fresh Food for the Active Soul</h2>
-                <p>Nourishing South Africans with real, wholesome food made fresh to order every day.</p>
-                <!-- Call to action directing users to the menu -->
-                <a href="service.html" class="btn btn-primary">Explore Our Menu <i data-lucide="arrow-right" class="ml-2" style="margin-left: 0.5rem; width: 1.2rem; height: 1.2rem;"></i></a>
-            </div>
+        <section id="hero">
+            <img src="images/hero-banner.jpg" alt="A fresh assortment of Kauai salads and smoothies" width="960">
+            <h2>Fresh Food for the Active Soul</h2>
+            <p>Nourishing South Africans with real, wholesome food made fresh to order every day.</p>
+            <!-- Call to action directing users to the menu -->
+            <a href='service.html'>Explore Our Menu &rarr;</a>
         </section>
 
         <!-- Highlights section displaying key product categories -->
-        <section id="menu-highlights" class="section container">
-            <div class="text-center animate-on-scroll delay-1">
-                <h2>Our Favourites</h2>
-                <p class="text-muted">Freshly prepared, full of flavour.</p>
-            </div>
-            
-            <ul class="grid grid-cols-3 mt-12" style="margin-top: 3rem;">
+        <section id="menu-highlights">
+            <h2>Our Favourites</h2>
+            <p>Freshly prepared, full of flavour.</p>
+
+            <ul>
                 <!-- Highlight item 1 -->
-                <li class="card animate-on-scroll delay-1">
-                    <div class="card-img-wrap">
-                        <img src="images/wrap.jpg" alt="Fresh chicken and avocado wrap" loading="lazy">
-                    </div>
-                    <div class="card-content">
-                        <h4>Signature Wraps</h4>
-                        <p class="text-muted">Delicious, freshly made wraps bursting with flavor.</p>
-                        <a href="service.html#wraps" class="badge">View Wraps</a>
-                    </div>
+                <li>
+                    <img src="images/wrap.jpg" alt="Fresh chicken and avocado wrap" width="400" loading="lazy">
+                    <h4>Signature Wraps</h4>
+                    <p>Delicious, freshly made wraps bursting with flavor.</p>
+                    <a href='service.html#wraps'>View Wraps</a>
                 </li>
                 <!-- Highlight item 2 -->
-                <li class="card animate-on-scroll delay-2">
-                    <div class="card-img-wrap">
-                        <img src="images/smoothie.jpg" alt="Green superfood smoothie" loading="lazy">
-                    </div>
-                    <div class="card-content">
-                        <h4>Superfood Smoothies</h4>
-                        <p class="text-muted">Packed with vitamins and nutrients for your daily boost.</p>
-                        <a href="service.html#smoothies" class="badge">View Smoothies</a>
-                    </div>
+                <li>
+                    <img src="images/smoothie.jpg" alt="Green superfood smoothie" width="400" loading="lazy">
+                    <h4>Superfood Smoothies</h4>
+                    <p>Packed with vitamins and nutrients for your daily boost.</p>
+                    <a href='service.html#smoothies'>View Smoothies</a>
                 </li>
                 <!-- Highlight item 3 -->
-                <li class="card animate-on-scroll delay-3">
-                    <div class="card-img-wrap">
-                        <img src="images/bowl.jpg" alt="Warm protein bowl" loading="lazy">
-                    </div>
-                    <div class="card-content">
-                        <h4>Power Bowls</h4>
-                        <p class="text-muted">Energizing warm bowls tailored for maximum nourishment and performance.</p>
-                        <a href="service.html#warm-bowls" class="badge">View Bowls</a>
-                    </div>
+                <li>
+                    <img src="images/bowl.jpg" alt="Warm protein bowl" width="400" loading="lazy">
+                    <h4>Power Bowls</h4>
+                    <p>Energizing warm bowls tailored for maximum nourishment and performance.</p>
+                    <a href='service.html#warm-bowls'>View Bowls</a>
                 </li>
             </ul>
         </section>
 
         <!-- Wellness philosophy block directing to store locator -->
-        <section id="philosophy" class="section" style="background-color: var(--c-secondary-light);">
-            <div class="container text-center animate-on-scroll delay-1">
-                <h2>The Kauai Philosophy</h2>
-                <p style="max-width: 600px; margin: 0 auto 2rem auto; font-size: 1.125rem;">We believe that healthy food should be accessible, delicious, and convenient. Find your nearest store today and grab a freshly made meal!</p>
-                <a href="contacts.html" class="btn btn-secondary">Find a Store Near You</a>
-            </div>
+        <section id="philosophy">
+            <h2>The Kauai Philosophy</h2>
+            <p>We believe that healthy food should be accessible, delicious, and convenient. Find your nearest store today and grab a freshly made meal!</p>
+            <a href='contacts.html'>Find a Store Near You</a>
         </section>
     </main>
 
     <!-- Footer containing copyright information -->
     <footer>
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col">
-                    <a href="index.html" class="brand" style="margin-bottom: 1.5rem;">
-                        <i data-lucide="leaf" style="color: var(--c-bg)"></i>
-                        <h2 style="color: var(--c-bg); margin: 0;">Kauai</h2>
-                    </a>
-                    <p>Real, wholesome food that fuels an active and balanced lifestyle, made fresh to order every day.</p>
-                </div>
-                <div class="footer-col">
-                    <h4>Quick Links</h4>
-                    <a href="about.html">Our Story</a>
-                    <a href="service.html">Our Menu</a>
-                    <a href="inquiry.html">Franchise & Enquiry</a>
-                    <a href="contacts.html">Store Locator</a>
-                </div>
-                <div class="footer-col">
-                    <h4>Connect</h4>
-                    <p>customercare@kauai.co.za</p>
-                    <p>0861 152 824</p>
-                    <div style="display: flex; gap: 1rem; margin-top: 1rem;">
-                        <a href="#"><i data-lucide="instagram"></i><span class="sr-only" style="display:none">Instagram</span></a>
-                        <a href="#"><i data-lucide="facebook"></i><span class="sr-only" style="display:none">Facebook</span></a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Kauai South Africa. All Rights Reserved. Prepared for WEDE5020 Part 1 Project.</p>
-            </div>
-        </div>
+        <h2>&#127811; Kauai</h2>
+        <p>Real, wholesome food that fuels an active and balanced lifestyle, made fresh to order every day.</p>
+
+        <h4>Quick Links</h4>
+        <nav>
+            <a href='about.html'>Our Story</a> |
+            <a href='service.html'>Our Menu</a> |
+            <a href='inquiry.html'>Franchise &amp; Enquiry</a> |
+            <a href='contacts.html'>Store Locator</a>
+        </nav>
+
+        <h4>Connect</h4>
+        <p>Email: customercare@kauai.co.za</p>
+        <p>Phone: 0861 152 824</p>
+
+        <hr>
+        <p>&copy; 2026 Kauai South Africa. All Rights Reserved. Prepared for WEDE5020 Part 1 Project.</p>
     </footer>
-    
-    <!-- Initialize Lucide Icons -->
-    <script>
-      lucide.createIcons();
-    </script>
-    
-    <!-- Main JS -->
-    <script src="js/main.js" defer></script>
 </body>
 </html>
